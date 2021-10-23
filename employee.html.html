@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			.form-wrapper {
+				border: 2px solid #dddd;
+				padding:10px 10px 10px 20px;
+			}
+			
+			.input-wrapper {
+				width:33%;
+				display: inline-block;
+				margin-bottom:10px;
+			}
+			
+			input, textarea, select {
+				padding: 10px;
+				margin-top: 5px;
+			}
+			
+			label {
+				font-weight:800
+			}
+			
+			.genderLabels, .hobbiesLabels {
+				font-weight: 500
+			}
+			
+			.empFormButtons button{
+				margin-right: 10px;
+				padding: 5px 10px;
+			}
+			
+			#formHeading {
+				text-align: center;
+				background: #ddd;
+				padding: 20px;
+				margin: 0;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h2 id="formHeading">Employee Registration Form</h2>
+		<div class="form-wrapper">
+			
+			<form id="empForm" name="empForm" method="POST">
+				<div class="userNameWrapper">
+					<div class="input-wrapper" id="firstNameDiv">
+						<label for="first_name">First Name: </label></br>
+						<input type="text" id="first_name" name="first_name" placeholder="Enter employee first name" />
+					</div>
+					<div class="input-wrapper" id="middleNameDiv">
+						<label for="middle_name">Middle Name: </label></br>
+						<input type="text" id="middle_name" name="middle_name" placeholder="Enter employee middle name" />
+					</div>
+					<div class="input-wrapper" id="lastNameDiv">
+						<label for="last_name">Last Name: </label></br>
+						<input type="text" id="last_name" name="last_name" placeholder="Enter employee last name" />
+					</div>
+				</div>
+				
+				<div class="">
+					<div class="input-wrapper" id="emailDiv">
+						<label for="email_address">Email: </label></br>
+						<input type="email" id="email_address" name="email_address" placeholder="Enter employee email address name" />
+					</div>
+					<div class="input-wrapper" id="phoneDiv">
+						<label for="mobile_number">Mobile Number: </label></br>
+						<input type="text" id="mobile_number" name="mobile_number" placeholder="Enter employee mobile number name" />
+					</div>
+				</div>
+				
+				<div class="">
+					<div class="input-wrapper" id="genderDiv">
+						<label for="gender">Gender:</label></br>
+						<label for="male_gender" class="genderLabels"><input type="radio" id="male_gender" name="gender"> Male </label>
+						<label for="female_gender" class="genderLabels"><input type="radio" id="female_gender" name="gender"> Male </label>
+					</div>
+					<div class="input-wrapper" id="qualificationDiv">
+						<label for="qualification">Qualification: </label></br>
+						<select type="text" id="qualification" name="qualification">
+							<option value=""> Select Qualification </option>
+							<option value="MBA"> MBA </option>
+							<option value="MBBS"> MBBS </option>
+							<option value="MCA"> MCA </option>
+							<option value="BCA"> BCA </option>
+						</select>
+					</div>
+				</div>
+				
+				<div class="">
+					<div class="input-wrapper" id="addressDiv">
+						<label for="address">Address:</label></br>
+						<textarea type="text" id="address" name="address" placeholder="Enter empoloyee living address" cols="15" rows="3"> </textarea>
+					</div>
+					<div class="input-wrapper" id="hobbiesDiv">
+						<label for="hobbies">Hobbies:</label></br>
+						<label for="listing_song" class="hobbiesLabels"><input type="checkbox" id="listing_song" name="hobbies[]"> Listing Songs </label>
+						<label for="playing_cricket" class="hobbiesLabels"><input type="checkbox" id="playing_cricket" name="hobbies[]"> Playing Cricket </label>
+					</div>
+				</div>
+				<div class="empFormButtons">
+					<button type="reset" id="empFormResetBtn"> Clear </button>
+					<button type="submit" id="empFormSubmitBtn"> Submit </button>
+				</div>
+			</form>
+		</div>	
+	</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<style>
+			#formHeading {
+				background: #ddd;
+			}
+			.form-wrapper {
+				border: 2px solid #dddd;
+			}
+			
+		</style>
+	</head>
+	
+	<body>
+		<h2 id="formHeading" class="text-center p-3 m-0">Employee Registration Form</h2>
+		<div class="form-wrapper p-3 pl-4">
+			
+			<form id="empForm" name="empForm" method="POST">
+				<div class="row mb-2">
+					<div class="col-md-4">
+						<label for="first_name">First Name: </label></br>
+						<input type="text" class="p-2" id="first_name" name="first_name" placeholder="Enter employee first name" />
+					</div>
+					<div class="col-md-4">
+						<label for="middle_name">Middle Name: </label></br>
+						<input type="text" class="p-2" id="middle_name" name="middle_name" placeholder="Enter employee middle name" />
+					</div>
+					<div class="col-md-4">
+						<label for="last_name">Last Name: </label></br>
+						<input type="text" class="p-2" id="last_name" name="last_name" placeholder="Enter employee last name" />
+					</div>
+				</div>
+				
+				<div class="row mb-2">
+					<div class="col-md-4" id="emailDiv">
+						<label for="email_address">Email: </label></br>
+						<input type="email" class="p-2" id="email_address" name="email_address" placeholder="Enter employee email address name" />
+					</div>
+					<div class="col-md-4" id="phoneDiv">
+						<label for="mobile_number">Mobile Number: </label></br>
+						<input type="text" class="p-2" id="mobile_number" name="mobile_number" placeholder="Enter employee mobile number name" />
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-4 form-group" id="genderDiv">
+						<label for="gender">Gender:</label></br>
+						<label for="male_gender" class="genderLabels"><input type="radio" id="male_gender" name="gender"> Male </label>
+						<label for="female_gender" class="genderLabels"><input type="radio" id="female_gender" name="gender"> Male </label>
+					</div>
+					<div class="col-md-4" id="qualificationDiv">
+						<label for="qualification">Qualification: </label></br>
+						<select type="text" class="p-2" id="qualification" name="qualification">
+							<option value=""> Select Qualification </option>
+							<option value="MBA"> MBA </option>
+							<option value="MBBS"> MBBS </option>
+							<option value="MCA"> MCA </option>
+							<option value="BCA"> BCA </option>
+						</select>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-4" id="addressDiv">
+						<label for="address">Address:</label></br>
+						<textarea type="text" id="address" name="address" placeholder="Enter empoloyee living address" cols="15" rows="3"> </textarea>
+					</div>
+					<div class="col-md-4" id="hobbiesDiv">
+						<label for="hobbies">Hobbies:</label></br>
+						<label for="listing_song" class="hobbiesLabels"><input type="checkbox" id="listing_song" name="hobbies[]"> Listing Songs </label>
+						<label for="playing_cricket" class="hobbiesLabels"><input type="checkbox" id="playing_cricket" name="hobbies[]"> Playing Cricket </label>
+					</div>
+				</div>
+				<div class="empFormButtons">
+					<button type="reset" id="empFormResetBtn"> Clear </button>
+					<button type="submit" id="empFormSubmitBtn"> Submit </button>
+				</div>
+			</form>
+		</div>	
+	</body>
+</html>

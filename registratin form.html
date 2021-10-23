@@ -1,0 +1,109 @@
+<html>
+	<head>
+	
+		<title> Registration Form</title>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		
+		<style>
+		 input{
+			width:50%;
+			padding: 5px;
+			background-color: #f8f9fa;
+		 }
+		.foot {
+			background-color: #e9ecef;
+			height: 10%;
+			text-align: center;
+			padding: 20px
+		}
+		form{
+			padding: 17px;
+			background-color: #fff;
+			align-content: center;
+			justify-content:center;
+			display: flex;
+		}
+		register{
+			width: 50%;
+		}
+		.main{
+			border: 3px dotted #d05151;
+		}
+
+		@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+        /* Styles */
+        }
+		@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+			.main{
+				padding: 20px;
+				border: 3px solid #d05151;
+				
+			}
+        }
+		</style>
+		
+	</head>
+	
+	<body>
+	
+		<div>
+		
+			<form>
+				<div class="main">
+					<h1>Register here</h1>
+					<br>
+					<p> Please fill in the details to create account to us</p>
+					<hr>
+					
+					<div class="email">
+						<label for="name"> Enter your email</label>
+							<br>
+							<input type="email" id="email" name="email" placeholder="Enter your email">
+					</div>
+							<br><br>
+					
+							
+					<div class="pwd">
+						<label for="password"> Enter your password</label>
+							<br>
+							<input type="password" id="password" name="password" placeholder="Enter your password" min="8" max="10">
+					</div>
+							<br><br>
+						
+					
+					<div class="confirm_pwd">
+						<label for="confirm_password"> Enter your password</label>
+							<br>
+							<input type="password" id="confirm_password" name="confirm_password" placeholder="Enter your confirm password" min="8" max="10">
+					</div>
+							<br>
+							
+					<hr>
+					
+					<p> By creating on your account your agree too our
+						<a href="https://www.facebook.com">Terms &  Privacy</a>
+					<p>
+						
+					<div>
+						<button class="register">Register</button>
+					</div>
+					<br><br>
+					
+					<footer class="foot" style="height:10%; text-align:center">
+						<p> Already have an account?
+							<a href="https://www.facebook.com">sign in</a>
+						</p>
+					</footer>
+					
+				</div>
+		
+			</form>
+		</div>
+	</body>
+</html>
